@@ -1,0 +1,112 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1559762705-2123aa9b467f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3870&q=80");
+  background-size: cover;
+  -webkit-animation: slideup 100s;
+  animation: slideup 100s linear;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@-webkit-keyframes slideup {
+  from {
+    background-position: bottom;
+    background-size: 1000px;
+  }
+  to {
+    background-position: -1000px 0px;
+    background-size: 2000px;
+  }
+}
+
+@keyframes slideup {
+  from {
+    background-position: 0px 0px;
+    background-size: 1700px;
+  }
+  to {
+    background-position: 1000px 0px;
+    background-size: 4000px;
+  }
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(192, 188, 188, 0.5);
+  border-radius: 3px;
+}
+.frontpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: clamp(2rem, 10vw, 4.5rem);
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(5, 5, 5);
+}
+button {
+  margin: 10px;
+  height: 48px;
+  background-color: grey;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.25rem;
+  transition: all 0.3s;
+
+  &:hover {
+    transition: all 0.3s;
+    border-radius: 0px;
+  }
+}
+
+.nineteen89Btn {
+  background-color: rgb(58, 162, 231);
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 1px;
+}
+
+.reputationBtn {
+  background-color: white;
+  color: black;
+  font-family: "Caudex", serif;
+  font-weight: bold;
+}
+.loverBtn {
+  background-color: #b8396b;
+  font-family: "Dancing Script", cursive;
+}
+.folkloreBtn {
+  background-color: #3e3e3e;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1rem;
+}
+.midnightsBtn {
+  background-color: #9d7bb0;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
