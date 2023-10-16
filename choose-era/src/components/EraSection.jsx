@@ -11,10 +11,7 @@ export default function EraSection(props) {
             <img src={props.src3} alt="Image 3" className="horizontalImg" />
             <img src={props.src2} alt="Image 2" className="verticalImg" />
           </div>
-          <div className="songs">
-            Top Streamed songs from {props.title} on Spotify
-            <Spotify link="https://open.spotify.com/playlist/5pBirqJyoe0j8KZDrUCJUx?si=b691cebb8fad4d51" />
-          </div>
+          <div className="songs">Listen to {props.title} on Spotify</div>
         </div>
       </div>
     </section>
