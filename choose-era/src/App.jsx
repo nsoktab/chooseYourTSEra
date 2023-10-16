@@ -1,18 +1,22 @@
+import { Router, Route, Routes, Outlet } from "react-router-dom";
 import "./App.css";
+import MainPage from "./pages/MainPage";
+import Reputation from "./pages/Reputation";
+import Era1989 from "./pages/Era1989";
+import Lover from "./pages/Lover";
+import Midnights from "./pages/Midnights";
+import Folklore from "./pages/Folklore";
 
 function App() {
   return (
-    <section className="frontpage">
-      <h1>WHAT IS YOUR TAYLOR SWIFT ERA?</h1>
-
-      <div>
-        <button className="nineteen89Btn">1989</button>
-        <button className="reputationBtn">reputation</button>
-        <button className="loverBtn">Lover</button>
-        <button className="folkloreBtn">folklore</button>
-        <button className="midnightsBtn">Midnights</button>
-      </div>
-    </section>
+    <Routes>
+      <Route index element={<MainPage />} />
+      <Route path="era1989" element={<Era1989 />} />
+      <Route path="reputation" element={<Reputation />} />
+      <Route path="lover" element={<Lover />} />
+      <Route path="folklore" element={<Folklore />} />
+      <Route path="midnights" element={<Midnights />} />
+    </Routes>
   );
 }
 
