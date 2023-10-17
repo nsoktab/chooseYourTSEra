@@ -12,6 +12,7 @@ export default function Reputation() {
       src1={img1}
       src2={img2}
       src3={img3}
+      Spotify="https://open.spotify.com/embed/album/6DEjYFkNZh67HP7R9PSZvv?utm_source=generator"
     />
   );
 }

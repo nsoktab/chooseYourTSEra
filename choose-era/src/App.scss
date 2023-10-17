@@ -4,7 +4,7 @@ body {
   background-image: url("https://images.unsplash.com/photo-1559762705-2123aa9b467f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3870&q=80");
   background-size: cover;
   -webkit-animation: slideup 100s;
-  animation: slideup 100s linear;
+  animation: slideup 100s linear alternate;
 
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -35,12 +35,12 @@ body {
 
 @keyframes slideup {
   from {
-    background-position: 0px 0px;
-    background-size: 1700px;
+    background-position: -100px 0px;
+    background-size: 100vw;
   }
   to {
-    background-position: 1000px 0px;
-    background-size: 4000px;
+    background-position: 0px 0px;
+    background-size: 5000px;
   }
 }
 
@@ -67,6 +67,11 @@ h1 {
   font-size: clamp(1rem, 8vw, 4.5rem);
   font-family: "Bebas Neue", sans-serif;
   color: rgb(5, 5, 5);
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+  margin-bottom: 5px;
 }
 button {
   margin: 10px;
@@ -115,12 +120,38 @@ button {
 .subpageBody {
   width: 100%;
   height: 100%;
+  animation: fadeIn 0.3s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .subpageMain {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.arrowHome {
+  width: 50px;
+  height: auto;
+  padding: 20px;
+  padding-bottom: 0;
+  animation: grow 2s infinite alternate;
+}
+
+@keyframes grow {
+  from {
+    scale: (0.9);
+  }
+  to {
+    scale: (1.1);
+  }
 }
 .subpageContent {
   display: flex;
@@ -156,7 +187,7 @@ button {
   position: relative;
   left: -150px;
   top: -20px;
-  animation: slide 1s ease-in-out;
+  animation: slide 1.5s ease-in-out;
 }
 
 @keyframes slide {
@@ -171,4 +202,16 @@ button {
     left: -70px;
     opacity: 1;
   }
+}
+
+.iframeSpotify {
+  border-radius: 15px;
+  border-color: transparent;
+}
+.songs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
 }

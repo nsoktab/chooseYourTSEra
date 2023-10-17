@@ -8,9 +8,7 @@ export default function MainPage() {
 
       <div>
         <Link to="/Era1989">
-          <button className="era1989Btn" color="red">
-            1989
-          </button>
+          <button className="era1989Btn">1989</button>
         </Link>
 
         <Link to="/reputation">
