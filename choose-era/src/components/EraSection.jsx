@@ -21,8 +21,10 @@ export default function EraSection(props) {
             <img src={props.src2} alt="Image 2" className="verticalImg" />
           </div>
           <div className="songs">
-            <h3>Listen to {props.title} on Spotify</h3>
-            <IFrame src={props.Spotify}/>
+            <h3 style={{ color: props.spotifyColor }}>
+              Listen to {props.title} on Spotify
+            </h3>
+            <IFrame src={props.Spotify} />
           </div>
         </div>
       </div>

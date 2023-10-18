@@ -12,6 +12,7 @@ export default function Era1989() {
       src1={img1}
       src2={img2}
       src3={img3}
+      spotifyColor="white"
       Spotify="https://open.spotify.com/embed/album/1yGbNOtRIgdIiGHOEBaZWf?utm_source=generator"
     />
   );

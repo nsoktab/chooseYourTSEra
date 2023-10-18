@@ -12,6 +12,7 @@ export default function Midnights() {
       src1={img1}
       src2={img2}
       src3={img3}
+      spotifyColor="white"
       Spotify="https://open.spotify.com/embed/album/1fnJ7k0bllNfL1kVdNVW1A?utm_source=generator&theme=0"
     />
   );

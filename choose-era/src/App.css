@@ -144,6 +144,7 @@ button:hover {
 
 .images {
   display: flex;
+  width: 60%;
   position: relative;
 }
 
@@ -195,12 +196,32 @@ button:hover {
 .iframeSpotify {
   border-radius: 15px;
   border-color: transparent;
+  width: 350px;
+  height: 352px;
 }
 
 .songs {
   display: flex;
+  width: 40%;
+  height: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: -50px;
+}
+
+@media screen and (min-width: 1400px) {
+  .iframeSpotify {
+    height: 450px;
+  }
+  h1 {
+    margin-bottom: 80px;
+  }
+  .horizontalImg {
+    top: 270px;
+  }
+  .albumCover {
+    width: 18vw;
+    height: 18vw;
+  }
 }/*# sourceMappingURL=App.css.map */
