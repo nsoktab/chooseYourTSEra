@@ -10,15 +10,12 @@ export default function MainPage() {
         <Link to="/Era1989">
           <button className="era1989Btn">1989</button>
         </Link>
-
         <Link to="/reputation">
           <button className="reputationBtn">reputation</button>
         </Link>
-
         <Link to="/lover">
           <button className="loverBtn">Lover</button>
         </Link>
-
         <Link to="/folklore">
           <button className="folkloreBtn">folklore</button>
         </Link>

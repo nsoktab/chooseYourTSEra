@@ -1,4 +1,4 @@
-import EraSection from "../components/EraSection";
+import EraSection from "../components/EraSection.1";
 import img1 from "../assets/folklore_1.webp";
 import img2 from "../assets/folklore_2.jpg";
 import img3 from "../assets/folklore_3.jpg";
@@ -6,6 +6,7 @@ import img3 from "../assets/folklore_3.jpg";
 export default function Folklore() {
   return (
     <EraSection
+      btn="folkloreBtn"
       color="#85796D"
       title="foklore"
       src1={img1}
