@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import IFrame from "./IFrame";
 
 export default function EraSection(props) {
+  const clicks = props.clicks;
   return (
     <section className="subpageBody" style={{ backgroundColor: props.color }}>
       <div>
@@ -12,7 +13,11 @@ export default function EraSection(props) {
       </div>
       <div className="subpageMain">
         <h1 style={{ color: props.headline }}>
-          There are XXX {props.count} Swifties loving {props.title}
+          There are{" "}
+          <span className="counting" data-val={clicks}>
+            {props.clicks}
+          </span>{" "}
+          Swifties loving {props.title}
         </h1>
         <div className="subpageContent">
           <div className="images">
@@ -30,4 +35,5 @@ export default function EraSection(props) {
       </div>
     </section>
   );
+  countingAnimation(props.clicks); // Call the function and pass props.clicks
 }

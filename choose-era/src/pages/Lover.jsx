@@ -6,6 +6,7 @@ import img3 from "../assets/lover_3.png";
 export default function Lover() {
   return (
     <EraSection
+      clicks="10"
       color="pink"
       title="Lover"
       src1={img1}

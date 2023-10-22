@@ -6,8 +6,9 @@ import img3 from "../assets/folklore_3.jpg";
 export default function Folklore() {
   return (
     <EraSection
+      clicks="17"
       color="#85796D"
-      title="foklore"
+      title="folklore"
       src1={img1}
       src2={img2}
       src3={img3}
