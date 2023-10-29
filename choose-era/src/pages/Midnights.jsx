@@ -6,7 +6,7 @@ import img3 from "../assets/midnights_3.webp";
 export default function Midnights() {
   return (
     <EraSection
-      clicks="3"
+      btnId="midnightsBtn"
       color="#9d7bb0"
       title="Midnights"
       headline="white"

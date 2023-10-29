@@ -6,7 +6,7 @@ import img3 from "../assets/1989_3.jpg";
 export default function Era1989() {
   return (
     <EraSection
-      clicks="20"
+      btnId="era1989Btn"
       color="#00A2E7"
       title="1989"
       headline="white"

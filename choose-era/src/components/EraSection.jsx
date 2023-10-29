@@ -1,9 +1,22 @@
 import arrow from "../assets/arrow.svg";
 import { Link } from "react-router-dom";
 import IFrame from "./IFrame";
+import { useEffect, useState } from "react";
+import CountUpAnimation from "./CountUpAnimation";
 
 export default function EraSection(props) {
-  const clicks = props.clicks;
+  /* const [clicks, setCLicks] = useState({});
+  useEffect(() => {
+    async function getCLicks() {
+      const url = `https://taylorswiftera-default-rtdb.europe-west1.firebasedatabase.app/buttons/${props.btnId}.json`;
+      const response = await fetch(url);
+      const data = await response.json();
+      console.log(data);
+      setCLicks(data);
+    }
+    getCLicks();
+  }, [props]);
+*/
   return (
     <section className="subpageBody" style={{ backgroundColor: props.color }}>
       <div>
@@ -13,11 +26,8 @@ export default function EraSection(props) {
       </div>
       <div className="subpageMain">
         <h1 style={{ color: props.headline }}>
-          There are{" "}
-          <span className="counting" data-val={clicks}>
-            {props.clicks}
-          </span>{" "}
-          Swifties loving {props.title}
+          There are <CountUpAnimation btnId={props.btnId} /> Swifties loving{" "}
+          {props.title}
         </h1>
         <div className="subpageContent">
           <div className="images">
@@ -35,5 +45,4 @@ export default function EraSection(props) {
       </div>
     </section>
   );
-  countingAnimation(props.clicks); // Call the function and pass props.clicks
 }
