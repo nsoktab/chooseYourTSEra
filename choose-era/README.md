@@ -6,5 +6,4 @@ What will I learn?
 
 - fetch and update database
 - embed Spotify playlist
-- embed Spotify playlist
 - image animation
